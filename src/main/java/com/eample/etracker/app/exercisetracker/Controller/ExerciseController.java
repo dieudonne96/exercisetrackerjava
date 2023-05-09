@@ -1,7 +1,7 @@
-package Controller;
+package com.eample.etracker.app.exercisetracker.Controller;
 
-import Model.Exercise;
-import Service.ExerciseService;
+import com.eample.etracker.app.exercisetracker.Model.Exercise;
+import com.eample.etracker.app.exercisetracker.Service.ExerciseService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -57,7 +57,7 @@ public class ExerciseController {
     }
 
     // delete all exercises
-    @DeleteMapping("/{id}")
+    @DeleteMapping
     public ResponseEntity<Void> deleteAllExercise() {
         exerciseService.deleteAllExercise();
         return ResponseEntity.noContent().build();

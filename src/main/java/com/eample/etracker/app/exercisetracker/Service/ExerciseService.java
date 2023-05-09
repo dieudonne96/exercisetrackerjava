@@ -1,7 +1,7 @@
-package Service;
+package com.eample.etracker.app.exercisetracker.Service;
 
-import Model.Exercise;
-import Repositories.ExerciseRepository;
+import com.eample.etracker.app.exercisetracker.Model.Exercise;
+import com.eample.etracker.app.exercisetracker.Repositories.ExerciseRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

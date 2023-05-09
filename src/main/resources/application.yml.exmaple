@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: <your_mongodb+srv>
+      database: <database name>

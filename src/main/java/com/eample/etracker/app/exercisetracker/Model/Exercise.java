@@ -1,4 +1,4 @@
-package Model;
+package com.eample.etracker.app.exercisetracker.Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
