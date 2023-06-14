@@ -29,7 +29,7 @@ public class ExerciseService {
     }
 
     // fetch a single exercise from the database
-    // based on the exercise id recieved
+    // based on the exercise id received
     public Optional<Exercise> singleExercise(ObjectId id) {
         return exerciseRepository.findById(id);
     }
