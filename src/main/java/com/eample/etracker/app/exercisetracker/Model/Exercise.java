@@ -1,21 +1,24 @@
 package com.eample.etracker.app.exercisetracker.Model;
 
+import java.time.LocalDateTime;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.bson.types.ObjectId;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDateTime;
-
-@Document(collection = "exercises")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "exercises")
 public class Exercise {
     @Id
-    private ObjectId id;
+    @GeneratedValue
+    private Long id;
     private String nameOfExercise;
     private String description;
     private String duration;

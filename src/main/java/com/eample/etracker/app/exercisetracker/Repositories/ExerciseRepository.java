@@ -1,10 +1,10 @@
 package com.eample.etracker.app.exercisetracker.Repositories;
 
-import com.eample.etracker.app.exercisetracker.Model.Exercise;
-import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import com.eample.etracker.app.exercisetracker.Model.Exercise;
+
 @Repository
-public interface ExerciseRepository extends MongoRepository<Exercise, ObjectId> {
+public interface ExerciseRepository extends JpaRepository<Exercise, Long> {
 }

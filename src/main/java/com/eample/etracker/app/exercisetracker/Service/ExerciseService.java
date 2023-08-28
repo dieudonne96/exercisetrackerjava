@@ -1,14 +1,14 @@
 package com.eample.etracker.app.exercisetracker.Service;
 
-import com.eample.etracker.app.exercisetracker.Model.Exercise;
-import com.eample.etracker.app.exercisetracker.Repositories.ExerciseRepository;
-import org.bson.types.ObjectId;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.eample.etracker.app.exercisetracker.Model.Exercise;
+import com.eample.etracker.app.exercisetracker.Repositories.ExerciseRepository;
 
 @Service
 public class ExerciseService {
@@ -30,12 +30,12 @@ public class ExerciseService {
 
     // fetch a single exercise from the database
     // based on the exercise id received
-    public Optional<Exercise> singleExercise(ObjectId id) {
+    public Optional<Exercise> singleExercise(Long id) {
         return exerciseRepository.findById(id);
     }
 
     // update an exercise
-    public Exercise updateExercise(Exercise exercise, ObjectId id) {
+    public Exercise updateExercise(Exercise exercise, Long id) {
         Optional<Exercise> optionalExercise = exerciseRepository.findById(id);
         if(optionalExercise.isPresent()) {
             Exercise existingExercise = optionalExercise.get();
@@ -52,12 +52,12 @@ public class ExerciseService {
     }
 
     // delete an exercise
-    public void  deleteExerciseById(ObjectId id) {
+    public void  deleteExerciseById(Long id) {
         exerciseRepository.deleteById(id);
     }
 
     // delete all exercises
-    public void  deleteAllExercise() {
-        exerciseRepository.deleteAll();
-    }
+    // public void  deleteAllExercise() {
+    //     exerciseRepository.deleteAll();
+    // }
 }
