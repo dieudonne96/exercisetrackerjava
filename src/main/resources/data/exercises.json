@@ -1,102 +1,104 @@
-[
-  {
-    "id": 1,
-    "nameOfExercise": "Sit Ups",
-    "description": "Core strengthening exercise",
-    "duration": "30 minutes",
-    "numberOfSets": 3,
-    "numberOfReps": 10,
-    "timeCreated": "2024-09-05T19:01:33.730409",
-    "timeUpdated": "2024-09-08T19:01:33.730409"
-  },
-  {
-    "id": 2,
-    "nameOfExercise": "Push Ups",
-    "description": "Upper body exercise",
-    "duration": "20 minutes",
-    "numberOfSets": 4,
-    "numberOfReps": 15,
-    "timeCreated": "2024-09-06T09:15:45.123456",
-    "timeUpdated": "2024-09-08T09:15:45.123456"
-  },
-  {
-    "id": 3,
-    "nameOfExercise": "Jumping Jacks",
-    "description": "Cardio exercise",
-    "duration": "15 minutes",
-    "numberOfSets": 5,
-    "numberOfReps": 25,
-    "timeCreated": "2024-09-06T11:00:00.987654",
-    "timeUpdated": "2024-09-08T11:00:00.987654"
-  },
-  {
-    "id": 4,
-    "nameOfExercise": "Plank",
-    "description": "Core stability exercise",
-    "duration": "10 minutes",
-    "numberOfSets": 3,
-    "numberOfReps": 1,
-    "timeCreated": "2024-09-07T14:45:33.123000",
-    "timeUpdated": "2024-09-08T14:45:33.123000"
-  },
-  {
-    "id": 5,
-    "nameOfExercise": "Squats",
-    "description": "Lower body exercise",
-    "duration": "25 minutes",
-    "numberOfSets": 4,
-    "numberOfReps": 12,
-    "timeCreated": "2024-09-07T08:30:20.654321",
-    "timeUpdated": "2024-09-08T08:30:20.654321"
-  },
-  {
-    "id": 6,
-    "nameOfExercise": "Lunges",
-    "description": "Leg strengthening exercise",
-    "duration": "20 minutes",
-    "numberOfSets": 3,
-    "numberOfReps": 10,
-    "timeCreated": "2024-09-06T10:20:10.765432",
-    "timeUpdated": "2024-09-08T10:20:10.765432"
-  },
-  {
-    "id": 7,
-    "nameOfExercise": "Mountain Climbers",
-    "description": "Full-body exercise",
-    "duration": "15 minutes",
-    "numberOfSets": 4,
-    "numberOfReps": 20,
-    "timeCreated": "2024-09-06T16:25:14.321456",
-    "timeUpdated": "2024-09-08T16:25:14.321456"
-  },
-  {
-    "id": 8,
-    "nameOfExercise": "Burpees",
-    "description": "High-intensity full-body exercise",
-    "duration": "10 minutes",
-    "numberOfSets": 3,
-    "numberOfReps": 15,
-    "timeCreated": "2024-09-05T17:50:50.789012",
-    "timeUpdated": "2024-09-08T17:50:50.789012"
-  },
-  {
-    "id": 9,
-    "nameOfExercise": "Pull Ups",
-    "description": "Back and arms exercise",
-    "duration": "15 minutes",
-    "numberOfSets": 3,
-    "numberOfReps": 8,
-    "timeCreated": "2024-09-07T13:40:23.456789",
-    "timeUpdated": "2024-09-08T13:40:23.456789"
-  },
-  {
-    "id": 10,
-    "nameOfExercise": "Bicep Curls",
-    "description": "Arm strengthening exercise",
-    "duration": "20 minutes",
-    "numberOfSets": 3,
-    "numberOfReps": 12,
-    "timeCreated": "2024-09-06T18:10:59.654321",
-    "timeUpdated": "2024-09-08T18:10:59.654321"
-  }
-]
+{
+  "exercises": [
+    {
+      "id": 1,
+      "nameOfExercise": "Sit Ups",
+      "description": "Core strengthening exercise",
+      "duration": "30 minutes",
+      "numberOfSets": 3,
+      "numberOfReps": 10,
+      "timeCreated": "2024-09-05T19:01:33.730409",
+      "timeUpdated": "2024-09-08T19:01:33.730409"
+    },
+    {
+      "id": 2,
+      "nameOfExercise": "Push Ups",
+      "description": "Upper body exercise",
+      "duration": "20 minutes",
+      "numberOfSets": 4,
+      "numberOfReps": 15,
+      "timeCreated": "2024-09-06T09:15:45.123456",
+      "timeUpdated": "2024-09-08T09:15:45.123456"
+    },
+    {
+      "id": 3,
+      "nameOfExercise": "Jumping Jacks",
+      "description": "Cardio exercise",
+      "duration": "15 minutes",
+      "numberOfSets": 5,
+      "numberOfReps": 25,
+      "timeCreated": "2024-09-06T11:00:00.987654",
+      "timeUpdated": "2024-09-08T11:00:00.987654"
+    },
+    {
+      "id": 4,
+      "nameOfExercise": "Plank",
+      "description": "Core stability exercise",
+      "duration": "10 minutes",
+      "numberOfSets": 3,
+      "numberOfReps": 1,
+      "timeCreated": "2024-09-07T14:45:33.123000",
+      "timeUpdated": "2024-09-08T14:45:33.123000"
+    },
+    {
+      "id": 5,
+      "nameOfExercise": "Squats",
+      "description": "Lower body exercise",
+      "duration": "25 minutes",
+      "numberOfSets": 4,
+      "numberOfReps": 12,
+      "timeCreated": "2024-09-07T08:30:20.654321",
+      "timeUpdated": "2024-09-08T08:30:20.654321"
+    },
+    {
+      "id": 6,
+      "nameOfExercise": "Lunges",
+      "description": "Leg strengthening exercise",
+      "duration": "20 minutes",
+      "numberOfSets": 3,
+      "numberOfReps": 10,
+      "timeCreated": "2024-09-06T10:20:10.765432",
+      "timeUpdated": "2024-09-08T10:20:10.765432"
+    },
+    {
+      "id": 7,
+      "nameOfExercise": "Mountain Climbers",
+      "description": "Full-body exercise",
+      "duration": "15 minutes",
+      "numberOfSets": 4,
+      "numberOfReps": 20,
+      "timeCreated": "2024-09-06T16:25:14.321456",
+      "timeUpdated": "2024-09-08T16:25:14.321456"
+    },
+    {
+      "id": 8,
+      "nameOfExercise": "Burpees",
+      "description": "High-intensity full-body exercise",
+      "duration": "10 minutes",
+      "numberOfSets": 3,
+      "numberOfReps": 15,
+      "timeCreated": "2024-09-05T17:50:50.789012",
+      "timeUpdated": "2024-09-08T17:50:50.789012"
+    },
+    {
+      "id": 9,
+      "nameOfExercise": "Pull Ups",
+      "description": "Back and arms exercise",
+      "duration": "15 minutes",
+      "numberOfSets": 3,
+      "numberOfReps": 8,
+      "timeCreated": "2024-09-07T13:40:23.456789",
+      "timeUpdated": "2024-09-08T13:40:23.456789"
+    },
+    {
+      "id": 10,
+      "nameOfExercise": "Bicep Curls",
+      "description": "Arm strengthening exercise",
+      "duration": "20 minutes",
+      "numberOfSets": 3,
+      "numberOfReps": 12,
+      "timeCreated": "2024-09-06T18:10:59.654321",
+      "timeUpdated": "2024-09-08T18:10:59.654321"
+    }
+  ]
+}
