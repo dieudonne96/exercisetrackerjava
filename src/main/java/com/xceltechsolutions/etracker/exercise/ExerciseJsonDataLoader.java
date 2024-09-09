@@ -24,12 +24,12 @@ public class ExerciseJsonDataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if(exerciseRepository.count() == 0) {
+        if (exerciseRepository.count() == 0) {
             try (InputStream inputStream = TypeReference.class.getResourceAsStream("/data/exercises.json")) {
                 Exercises allExercises = objectMapper.readValue(inputStream, Exercises.class);
                 log.info("Reading {} exercises from JSON data and saving to in-memory collection.", allExercises.exercises().size());
                 exerciseRepository.saveAll(allExercises.exercises());
-            } catch(IOException e){
+            } catch (IOException e) {
                 log.info("Not loading Exercises from JSON data because the collection contains data.");
 
             }
