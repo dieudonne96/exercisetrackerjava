@@ -20,14 +20,14 @@ public class ExerciseRepository {
     }
 
     public List<Exercise> findAll() {
-        return jdbcClient.sql("select * from exercise")
+        return jdbcClient.sql("SELECT * FROM exercise")
                 .query(Exercise.class)
                 .list();
     }
 
     // READ SINGLE
     public Optional<Exercise> findById(Integer id) {
-        return jdbcClient.sql("SELECT id, nameOfExercise, description, duration, numberOfSets, numberOfReps, timeCreated, timeUpdated FROM Exercise WHERE id = :id")
+        return jdbcClient.sql("SELECT id, nameOfExercise, description, duration, numberOfSets, numberOfReps, timeCreated, timeUpdated FROM exercise WHERE id = :id")
                 .param("id", id)
                 .query(Exercise.class)
                 .optional();
@@ -36,7 +36,7 @@ public class ExerciseRepository {
     // CREATE
     public void createExercise(Exercise exercise) {
         var newExercise = jdbcClient
-                .sql("INSERT INTO Exercise(id, nameOfExercise, description, duration, numberOfSets, numberOfReps, timeCreated, timeUpdated) VALUES(?,?,?,?,?,?,?,?)")
+                .sql("INSERT INTO exercise(id, nameOfExercise, description, duration, numberOfSets, numberOfReps, timeCreated, timeUpdated) VALUES(?,?,?,?,?,?,?,?)")
                 .params(List.of(exercise.id(), exercise.nameOfExercise(), exercise.description(), exercise.duration(), exercise.numberOfSets(), exercise.numberOfReps(), exercise.timeCreated(), exercise.timeUpdated()))
                 .update();
 
@@ -45,7 +45,7 @@ public class ExerciseRepository {
 
     // UPDATE EXERCISE
     public void updateExercise(Exercise exercise, Integer id) {
-        var updated = jdbcClient.sql("UPDATE Exercise SET nameOfExercise = ?, description =?, duration=?, numberOfSets=?, numberOfReps=?, timeCreated=?, timeUpdated=? WHERE id =?")
+        var updated = jdbcClient.sql("UPDATE exercise SET nameOfExercise = ?, description =?, duration=?, numberOfSets=?, numberOfReps=?, timeCreated=?, timeUpdated=? WHERE id =?")
                 .params(List.of(exercise.nameOfExercise(), exercise.description(), exercise.duration(), exercise.numberOfSets(), exercise.numberOfReps(), exercise.timeCreated(), exercise.timeUpdated(), id))
                 .update();
 
@@ -54,7 +54,7 @@ public class ExerciseRepository {
 
     // DELETE SINGLE EXERCISE
     public void deleteById(Integer id) {
-        var updated = jdbcClient.sql("DELETE FROM Exercise WHERE id = :id")
+        var updated = jdbcClient.sql("DELETE FROM exercise WHERE id = :id")
                 .param("id", id)
                 .update();
 
@@ -67,7 +67,7 @@ public class ExerciseRepository {
     //    }
 
     public int count() {
-        return jdbcClient.sql("SELECT * FROM Exercise")
+        return jdbcClient.sql("SELECT COUNT(*) FROM exercise")
                 .query()
                 .listOfRows()
                 .size();

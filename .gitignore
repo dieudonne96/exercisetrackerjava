@@ -34,3 +34,4 @@ build/
 
 ### YAML ###
 application.yml
+compose.yml
