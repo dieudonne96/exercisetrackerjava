@@ -66,7 +66,7 @@ public class ExerciseRepository {
     //        exercises.clear();
     //    }
 
-    public int count() {
+    public int countExercise() {
         return jdbcClient.sql("SELECT COUNT(*) FROM exercise")
                 .query()
                 .listOfRows()
